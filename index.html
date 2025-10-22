@@ -44,7 +44,7 @@
       color: #a2e3c4;
     }
 
-    /* MAIN TITLE SECTION */
+    /* HERO SECTION */
     .hero {
       text-align: center;
       padding: 4rem 1rem;
@@ -65,7 +65,7 @@
       margin: 0 auto;
     }
 
-    /* MAIN CONTAINER */
+    /* MAIN CONTENT */
     .container {
       display: flex;
       flex-wrap: wrap;
@@ -75,7 +75,7 @@
       gap: 3rem;
     }
 
-    /* PROFILE */
+    /* PROFILE CARD */
     .profile {
       max-width: 300px;
       text-align: center;
@@ -166,56 +166,6 @@
       margin-bottom: 0.5rem;
     }
 
-    /* CONTACT SECTION */
-    .contact {
-      background: #113b32;
-      margin: 4rem auto;
-      max-width: 800px;
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .contact h2 {
-      color: #a2e3c4;
-      margin-bottom: 1rem;
-    }
-
-    .contact p {
-      margin-bottom: 1rem;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    input, textarea {
-      padding: 0.8rem;
-      border-radius: 8px;
-      border: none;
-      font-family: inherit;
-      font-size: 1rem;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-
-    input[type="submit"] {
-      background-color: #a2e3c4;
-      color: #0b2c24;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #81c7a3;
-    }
-
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -231,15 +181,15 @@
   <header>
     <h1>Chien Shiung Wu</h1>
     <nav>
-      <a href="#main">Home</a>
+      <a href="index.html">Home</a>
       <a href="#about">About</a>
       <a href="#interests">Interests</a>
       <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- MAIN PAGE TITLE -->
+  <!-- HERO -->
   <section class="hero" id="main">
     <h2>Welcome to My Portfolio</h2>
     <p>Discover my research, my background, and connect with me to discuss ideas about AI, robotics, and technology.</p>
@@ -288,18 +238,6 @@
       </div>
     </div>
   </div>
-
-  <!-- CONTACT SECTION -->
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <p>Have questions, ideas, or just want to say hello? Leave your info and message below — I’d love to hear from you!</p>
-    <form action="https://formspree.io/f/xblzvdyg" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message or Opinion" required></textarea>
-      <input type="submit" value="Send Message" />
-    </form>
-  </section>
 
   <footer>
     © 2025 Chien Shiung Wu | Designed with ❤️ and curiosity
