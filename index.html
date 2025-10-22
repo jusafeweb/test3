@@ -12,7 +12,8 @@
       margin: 0;
       padding: 0;
     }
-  /* HEADER STYLES */
+
+    /* HEADER STYLES */
     header {
       background-color: #113b32;
       display: flex;
@@ -42,8 +43,7 @@
     nav a:hover {
       color: #a2e3c4;
     }
-    
-    
+
     .container {
       display: flex;
       flex-wrap: wrap;
@@ -54,7 +54,7 @@
     }
 
     .profile {
-      max-width: 600px;
+      max-width: 300px;
       text-align: center;
       background: #113b32;
       padding: 2rem;
@@ -63,8 +63,8 @@
     }
 
     .profile img {
-      width: 400px;
-      height: 400px;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
       border-radius: 50%;
       border: 3px solid #ffffff55;
@@ -77,7 +77,7 @@
 
     .profile h3 {
       margin-top: 0.5rem;
-      font-weight: 600;
+      font-weight: 400;
       color: #a2e3c4;
     }
 
@@ -93,7 +93,7 @@
     }
 
     .about {
-      max-width: 1200px;
+      max-width: 600px;
       background: #113b32;
       padding: 2rem;
       border-radius: 16px;
@@ -144,11 +144,23 @@
   </style>
 </head>
 <body>
+  <!-- 🌿 HEADER START -->
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <!-- 🌿 HEADER END -->
+
   <div class="container">
     <div class="profile">
       <img src="your-photo.jpg" alt="Profile Photo">
-      <h2>Rolex Cartier Louis</h2>
-      <h3>Prosessional chief<br>Denmark</h3>
+      <h2>Chien Shiung Wu</h2>
+      <h3>Chief Scientist<br>OpenAI</h3>
       <div class="social-links">
         <a href="#">🌐</a>
         <a href="#">💼</a>
@@ -157,17 +169,17 @@
       </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
       <h1>About Me</h1>
       <p>
-        I’m a professor of Artificial Intelligence at the Stanford AI Lab. 
-        My research focuses on distributed robotics, mobile computing, and programmable matter. 
-        I lead the Robotic Neurobiology group, which explores self-reconfiguring robots, 
+        I’m a professor of Artificial Intelligence at the Stanford AI Lab.
+        My research focuses on distributed robotics, mobile computing, and programmable matter.
+        I lead the Robotic Neurobiology group, which explores self-reconfiguring robots,
         self-organizing systems, and mobile sensor networks.
       </p>
-      
+      <button>📄 Download CV</button>
 
-      <div class="section">
+      <div class="section" id="interests">
         <h2>Interests</h2>
         <ul>
           <li>Artificial Intelligence</li>
@@ -176,7 +188,7 @@
         </ul>
       </div>
 
-      <div class="section">
+      <div class="section" id="education">
         <h2>Education</h2>
         <ul>
           <li>PhD Artificial Intelligence — Stanford University</li>
